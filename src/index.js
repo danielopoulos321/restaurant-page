@@ -1,1 +1,3 @@
-alert('Setup Success');
+import pageLoad from "./pageLoad";
+
+pageLoad();
