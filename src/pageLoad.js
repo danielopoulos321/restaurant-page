@@ -1,3 +1,5 @@
+import './styles.css';
+
 function pageLoad() {
     const content = document.getElementById('content');
 
