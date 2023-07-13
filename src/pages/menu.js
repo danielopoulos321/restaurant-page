@@ -1,8 +1,8 @@
 function menuLoad() {
     const content = document.getElementById('content');
 
-    const menuContent = document.createElement('div');
-    menuContent.classList = 'menuContent';
+    const container = document.createElement('div');
+    container.id = 'container';
 
     const title = document.createElement('h1');
     title.textContent = "Food";
@@ -10,10 +10,10 @@ function menuLoad() {
     const blurb = document.createElement('p');
     blurb.textContent = "THis is made with tomatoes";
 
-    menuContent.appendChild(title);
-    menuContent.appendChild(blurb);
+    container.appendChild(title);
+    container.appendChild(blurb);
 
-    content.appendChild(menuContent);
+    content.appendChild(container);
 }
 
 export default menuLoad;

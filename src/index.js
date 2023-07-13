@@ -26,3 +26,5 @@ contactTab.addEventListener('click', () => {
     wipeContent();
     contactLoad();
 });
+
+homeTab.click();

@@ -33,7 +33,7 @@ function pageLoad() {
 
     //Create Content div for tab loading
     const content = document.createElement('div');
-    content.classList.add('content');
+    content.id = 'content';
 
     //Append all Elements in order
     tabs.appendChild(homeTab);
