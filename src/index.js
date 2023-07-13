@@ -2,17 +2,27 @@ import pageLoad from "./pageLoad";
 import homeLoad from "./pages/home";
 import menuLoad from "./pages/menu";
 
+pageLoad();
+
 function wipeContent() {
     const content = document.getElementById('content');
     content.innerHTML = '';
 };
 
-const menuTab = document.querySelector('button');
-
+const menuTab = document.getElementById('menu');
 menuTab.addEventListener('click', () => {
     wipeContent();
     menuLoad();
 });
 
-pageLoad();
-homeLoad();
+const homeTab = document.getElementById('home');
+homeTab.addEventListener('click', () => {
+    wipeContent();
+    homeLoad();
+});
+
+const contactTab = document.getElementById('contact');
+contactTab.addEventListener('click', () => {
+    wipeContent();
+    contactLoad();
+});
