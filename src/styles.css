@@ -43,10 +43,11 @@ body {
     padding: 2em;
   }
 
-  .home{
+  .column{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   #chef{
@@ -58,12 +59,13 @@ body {
 
   .menu{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
     grid-gap: 2rem;
   }
 
   .menuItem{
     height: 150px;
+    padding: 1rem;
     background-color: rgba(59, 59, 59, 0.8);
     border: 1px solid grey;
   }

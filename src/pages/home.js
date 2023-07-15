@@ -5,7 +5,7 @@ function homeLoad() {
 
     const container = document.createElement('div');
     container.classList.add('container');
-    container.classList.add('home');
+    container.classList.add('column');
 
     const title = document.createElement('h1');
     title.textContent = "Welcome to Le Pizz Pizzeria";

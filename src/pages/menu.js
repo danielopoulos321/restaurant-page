@@ -1,6 +1,7 @@
 function createMenuItem(name, ingredients){
     const menuItem = document.createElement('div');
     menuItem.classList.add('menuItem');
+    menuItem.classList.add('column');
 
     const itemName = document.createElement('h2');
     itemName.textContent = name;
@@ -23,8 +24,11 @@ function menuLoad() {
 
     const menuItemsData = [
         { name: 'Margherita', ingredients: 'Tomato sauce, Cheese, Basil Leaves' },
-        { name: 'Pepperoni', ingredients: 'Tomato sauce, Cheese, Pepperoni' },
+        { name: 'Quattro Formaggi', ingredients: 'Tomato sauce, Mozzarella, Parmesan, Gorgonzola, Buffala' },
         { name: 'Vegetarian', ingredients: 'Tomato sauce, Cheese, Various Veggies' },
+        { name: 'Capricciosa', ingredients: 'Tomato sauce, Mozzarella, Mushroom, Baked Ham, Artichoke' },
+        { name: 'Neapolitan', ingredients: 'Tomato sauce, Cheese, Pomodoro' },
+        { name: 'Caprese', ingredients: 'Tomato sauce, Mozzarella, Caprese Salad, Basilo Leaves' },
     ];
 
     menuItemsData.forEach(menuItemData => {
