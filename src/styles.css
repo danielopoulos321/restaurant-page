@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Kaushan Script', cursive;
+    color: #e1e1e1;
     margin: 0;
     padding: 0;
     background-image: url('./assets/pizza.jpg');
@@ -10,13 +11,12 @@ body {
   }
 
   h1{
-    color: #e1e1e1;
     padding: 0;
     margin: 0;
   }
 
   p{
-    color: #e1e1e1;
+
   }
 
   .header{
@@ -31,22 +31,41 @@ body {
   }
 
   #content{
-    margin-top: 2em;
+    margin-top: 3em;
     display: flex;
     justify-content: center;
   }
 
-  #container{
+  .container{
     width: 750px;
-    background-color: rgba(126, 126, 126, 0.422);
+    background-color: rgba(59, 59, 59, 0.7);
     border: 1px solid grey;
-    padding: 1em;
+    padding: 2em;
+  }
+
+  .home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   #chef{
-    max-width: 400px;
-    max-height: 400px;
-    border-radius: 200px;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 150px;
+    border: 2px solid grey;
+  }
+
+  .menu{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+
+  .menuItem{
+    height: 150px;
+    background-color: rgba(59, 59, 59, 0.8);
+    border: 1px solid grey;
   }
 
   /* Tab Button CSS */

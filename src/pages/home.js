@@ -4,7 +4,8 @@ function homeLoad() {
     const content = document.getElementById('content');
 
     const container = document.createElement('div');
-    container.id = 'container';
+    container.classList.add('container');
+    container.classList.add('home');
 
     const title = document.createElement('h1');
     title.textContent = "Welcome to Le Pizz Pizzeria";
@@ -13,7 +14,7 @@ function homeLoad() {
     chef.src = Chef;
     chef.id = 'chef';
 
-    const blurb = document.createElement('p');
+    const blurb = document.createElement('h2');
     blurb.textContent = "Voted the best Pizza in Montreal, 10 years in a row";
 
     container.appendChild(title);
